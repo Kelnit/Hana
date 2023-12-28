@@ -2,9 +2,9 @@ import tensorflow as tf
 from tensorflow.keras import Model
 from tensorflow.keras import layers
 
-class Modelin(Model):
+class Helper(Model):
   def __init__(self, input_shape):
-    super(Modelin, self).__init__()
+    super(Helper, self).__init__()
     self.prep_flip = layers.RandomFlip()
     self.prep_translation = layers.RandomTranslation(0, 0.2)
 
